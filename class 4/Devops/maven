@@ -1,0 +1,32 @@
+sudo yum install maven -y
+
+sudo yum install git -y
+
+Maven home: /usr/share/maven
+
+mvn --version
+
+mvn package
+
+mvn clean package
+
+Validate
+Validate pom.xml
+Compile
+Compile java classes
+Test
+Run Junit test cases
+Package
+Create artifact( jar, war, ear)
+Verify
+Can be integrated with integration test frameworks
+Install
+Copies artifacts to local repository
+Deploy
+Uploads artifacts to remote repository
+
+mvn package -DskipTests=true
+
+mvn archetype:generate -DgroupId=in.javahome -DartifactId=shopping-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+
+

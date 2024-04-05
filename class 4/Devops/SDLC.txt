@@ -1,0 +1,43 @@
+AWS
+
+Create free account with AWS
+We are using AWS cloud platform to spin up, linux, windows virtual machines for learning, devops tools. 
+Create AWS free Account
+https://aws.amazon.com/free
+Launch Linux Server in AWS
+Check video
+How to connect to remote linux servers?
+From Windows
+Install SSH clients like putty, mobaxterm, git bash etc…
+Demo Connect for EC2 from Git bash
+Open git bash
+Change permissions of pem file
+chmod 400 keyname.pem
+ssh -i "project2.pem" ec2-user@ec2-65-2-141-38.ap-south-1.compute.amazonaws.com
+
+Maven
+
+install maven on Linux
+sudo yum install maven -y
+Install git to clone or pull the code on to local machine
+sudo yum install git -y
+
+Maven Build Lifecycle
+
+Validate
+Validate pom.xml
+Compile
+Compile java classes
+Test
+Run Junit test cases
+Package
+Create artifact( jar, war, ear)
+Verify
+Can be integrated with integration test frameworks
+Install
+Copies artifacts to local repository
+Deploy
+Uploads artifacts to remote repository
+How to skip test cases in maven?
+mvn package -DskipTests=true
+

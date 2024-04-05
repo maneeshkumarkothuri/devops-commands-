@@ -1,0 +1,27 @@
+Apache Tomcat
+It is an open source web server used for deploying java web applications.
+Majority of java java application run on apache tomcat
+Install Tomcat on Linux Server
+Install JRE(Java Runtime Environment)
+sudo yum install java-1.8.0-openjdk -y
+Download tomcat tar file
+cd /opt
+sudo wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.70/bin/apache-tomcat-8.5.70.tar.gz
+sudo tar xf apache-tomcat-8.5.70.tar.gz
+sudo mv apache-tomcat-8.5.70 tomcat8
+sudo rm apache-tomcat-8.5.70.tar.gz
+sudo chown -R ec2-user:ec2-user tomcat8/
+ Start tomcat
+/opt/tomcat8/bin/startup.sh
+Shutdown Tomcat
+/opt/tomcat8/bin/shutdown.sh
+Default port of tomcat
+8080 is default port of tomcat
+We can change port numbers.
+Tomcat Deployment Folder
+To deploy applications on tomcat server, we have to place war file under “TOMCAT_HOME/webapps
+Example → “/opt/tomcat8/webapps”
+
+Note: You have to copy the war file under the webapps folder of tomcat.
+
+scp -i aws-linux.pem myweb/target/myweb-8.3.2.war ec2-user@15.206.151.155:/opt/tomcat8/webapps/myweb.war
